@@ -2,7 +2,7 @@
   "name": "gellaho-syntax",
   "theme": "syntax",
   "version": "0.1.0",
-  "description": "Gellaho's theme.",
+  "description": "Gellaho's theme. Very much a WIP.",
   "repository": "https://github.com/atom/gellaho-syntax",
   "license": "MIT",
   "engines": {
