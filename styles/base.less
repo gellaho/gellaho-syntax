@@ -79,11 +79,11 @@
   color: @blue;
 
   &.control {
-    color: @orange;
+    color: @operator-color;
   }
 
   &.operator {
-    color: @orange;
+    color: @operator-color;
   }
 
   &.other.special-method {
@@ -96,14 +96,14 @@
 }
 
 .storage {
-  color: @purple;
+  color: @operator-color;
 }
 
 .constant {
   color: @blue;
 
   &.character.escape {
-    color: @instance;
+    color: @interpolation;
   }
 
   &.numeric {
@@ -131,6 +131,10 @@
   }
   &.other.constant.ruby {
     color: @dark-red;
+  }
+
+  &.storage.ruby {
+    color: @operator-color;
   }
 }
 
@@ -164,9 +168,11 @@
     &.string {
       color: @green;
     }
+
     &.variable {
       color: @instance;
     }
+
     &.parameters,
     &.array {
       color: @syntax-text-color;
@@ -188,10 +194,21 @@
     }
   }
 
-  &.section.embedded {
-    color: @interpolation;
+  &.separator.other {
+    color: @operator-color;
   }
 
+  &.statement {
+    color: @operator-color;
+  }
+
+  &.scope.begin, &.scope.end {
+    color: @operator-color;
+  }
+
+  &.ruby.section.embedded {
+    color: @interpolation;
+  }
 }
 
 .support {
@@ -222,8 +239,7 @@
   }
 
   &.name.tag {
-    color: @red;
-    text-decoration: underline;
+    color: @html-color;
   }
 
   &.other.attribute-name {
@@ -245,7 +261,7 @@
   }
 
   &.require {
-    color: @blue;
+    color: @syntax-text-color;
   }
 
   &.selector {
@@ -264,6 +280,21 @@
 
 .none {
   color: @syntax-text-color;
+}
+
+.html {
+  &.any {
+    color: @html-color;
+  }
+  &.punctuation {
+    color: @html-color;
+  }
+  &.tag.entity {
+    color: @html-color;
+  }
+  &.comment {
+    color: @comment-color;
+  }
 }
 
 .markup {
