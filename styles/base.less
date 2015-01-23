@@ -129,13 +129,7 @@
   &.parameter.function {
     color: @syntax-text-color;
   }
-  &.other.constant.ruby {
-    color: @dark-red;
-  }
 
-  &.storage.ruby {
-    color: @operator-color;
-  }
 }
 
 .invalid.illegal {
@@ -149,9 +143,7 @@
   &.regexp {
     color: @green;
 
-    .source.ruby.embedded {
-      color: @orange;
-    }
+
   }
 
   &.other.link {
@@ -206,9 +198,6 @@
     color: @operator-color;
   }
 
-  &.ruby.section.embedded {
-    color: @interpolation;
-  }
 }
 
 .support {
@@ -294,6 +283,26 @@
   }
   &.comment {
     color: @comment-color;
+  }
+}
+
+.ruby {
+  &.punctuation.section.embedded {
+    color: @interpolation;
+  }
+
+  .source.embedded {
+    color: @orange;
+  }
+
+  &.variable {
+    &.other.constant.ruby {
+      color: @dark-red;
+    }
+
+    &.storage.ruby {
+      color: @operator-color;
+    }
   }
 }
 
