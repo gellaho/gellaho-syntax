@@ -292,7 +292,7 @@
   }
 
   .source.embedded {
-    color: @orange;
+    color: @syntax-text-color;
   }
 
   &.variable {
@@ -303,6 +303,24 @@
     &.storage.ruby {
       color: @operator-color;
     }
+  }
+}
+
+.coffee {
+  .embedded {
+    color: @interpolation;
+  }
+}
+
+.css {
+  .entity.name {
+    color: @dark-red;
+  }
+  .property-name{
+    color: @instance;
+  }
+  .punctuation.begin, .punctuation.end {
+    color: @operator-color;
   }
 }
 
